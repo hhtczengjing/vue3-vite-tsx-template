@@ -3,7 +3,7 @@ import { resolve } from 'path';
 import vue from '@vitejs/plugin-vue';
 import vueJsx from '@vitejs/plugin-vue-jsx';
 import legacy from '@vitejs/plugin-legacy';
-// import eslint from '@nabla/vite-plugin-eslint';
+import eslint from '@nabla/vite-plugin-eslint';
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
@@ -27,7 +27,7 @@ export default defineConfig(({ mode }) => {
     },
     base: './',
     plugins: [
-      // eslint(), 
+      eslint(), 
       vue(),
       vueJsx(),
       legacy({

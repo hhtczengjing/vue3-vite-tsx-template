@@ -24,14 +24,14 @@
         "./src/assets/*"
       ]
     },
-    "types": ["vite/client", "vue/jsx-runtime"]
+    "types": ["vite/client", "vue/jsx-runtime", "node"]
   },
   "include": [
     "src/**/*.ts",
     "src/**/*.d.ts",
     "src/**/*.tsx",
     "src/**/*.vue"
-, "src/utils/http/axios-interceptor-crypto.js", "src/utils/http/axios.js"  ],
+  ],
   "exclude": [
     "node_modules",
     "dist"
