@@ -13,5 +13,6 @@ createApp(App)
 
 // 在开发环境下启用 vConsole
 if (process.env.NODE_ENV === 'development') {
+  // eslint-disable-next-line no-new
   new VConsole();
 }
