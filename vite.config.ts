@@ -40,7 +40,10 @@ export default defineConfig(({ mode }) => {
       sourcemap: process.env.NODE_ENV !== 'production',
       rollupOptions: {
         output: {
-          hashCharacters: 'hex'
+          hashCharacters: 'hex',
+          manualChunks: {
+            vant: ['vant']
+          },
         },
       },
     },
